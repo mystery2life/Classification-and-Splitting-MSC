@@ -1,0 +1,36 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment & secrets
+.env
+*.env
+
+# Logs and debug
+*.log
+
+# IDE & Editor settings
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Test and coverage reports
+.coverage
+.pytest_cache/
+.cache/
+
+# Build / dist
+build/
+dist/
+*.egg-info/
