@@ -1,0 +1,17 @@
+mkdir -p services/classifier_splitter/{core,di,split,models,service,tests}
+
+# Create folders
+New-Item -ItemType Directory -Path core,di,split,models,service,tests
+
+# Create empty files
+New-Item -ItemType File -Path app.py, requirements.txt, Dockerfile, .env.example, README.md
+
+New-Item -ItemType File -Path core/config.py, core/logging.py, core/sb.py
+New-Item -ItemType File -Path di/client.py, di/classify.py
+New-Item -ItemType File -Path split/rules.py, split/pageops.py
+New-Item -ItemType File -Path models/api.py, models/events.py
+New-Item -ItemType File -Path service/orchestrate.py
+New-Item -ItemType File -Path tests/test_split_rules.py, tests/test_api_smoke.py
+
+New-Item -ItemType File models\__init__.py
+New-Item -ItemType File core\__init__.py, di\__init__.py, split\__init__.py, models\__init__.py, service\__init__.py, tests\__init__.py -Force
